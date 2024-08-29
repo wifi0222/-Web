@@ -1,0 +1,80 @@
+/* 关于我们页面的样式 */
+
+.about-section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.team-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 图片之间的间距 */
+    margin-bottom: 30px; /* 图片与标题之间的间距 */
+}
+
+.team-image {
+    width: 200px; /* 调整图片的宽度 */
+    height: auto;
+}
+
+.dashed-line {
+    border: none;
+    border-top: 2px dashed #007bff; /* 淡蓝色虚线 */
+    margin: 30px 0;
+}
+
+.section-title {
+    color: #007bff; /* 蓝色字体 */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-description {
+    background-color: #e6f7ff; /* 淡蓝色背景 */
+    padding: 20px;
+    border-radius: 10px; /* 圆角效果 */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 图片之间的间距 */
+    margin-bottom: 30px;
+}
+
+.member {
+    position: relative;
+    cursor: pointer;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 圆形图片 */
+    transition: transform 0.3s ease; /* 悬停放大效果 */
+}
+
+.member-image:hover {
+    transform: scale(1.1); /* 放大效果 */
+}
+
+.member-info {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.contact-info {
+    background-color: #d3d3d3; /* 灰色背景 */
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+    margin-top: 50px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 通用样式 -->
+    <link rel="stylesheet" href="about.css"> <!-- 关于我们页面特定样式 -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="image\logo.jpg" alt="Logo" class="logo-img"> <!-- 添加Logo -->
+                <h1><a href="index.html">慧读文献</a></h1>
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="crnn.html" class="nav-link">文档识别</a></li>
+                    <li><a href="about.html" class="nav-link active">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主内容部分 -->
+    <div class="about-section">
+        <div class="team-images">
+            <img src="image\bjfu.gif" alt="Image 1" class="team-image">
+            <img src="image\logo.jpg" alt="Image 2" class="team-image">
+        </div>
+
+        <hr class="dashed-line">
+
+        <h2 class="section-title">慧读文献软件开发团队</h2>
+        <div class="project-description">
+            我们是来自北京林业大学信息学院的大创项目组，由 xxx, xxx, xxx 三名成员组成。
+            本软件为国家级大创 “基于多模态大模型的端到端文本图像结构化识别” 项目的衍生成果，
+            采用 Nougat 与 CRNN 模型联合框架，旨在为您提供优质的科技文献识别服务。
+            如果您对本软件有疑问或想提出改进的意见，请联系我们，我们将感激不尽。
+        </div>
+
+        <hr class="dashed-line">
+
+        <h2 class="section-title">成员简介</h2>
+        <div class="team-members">
+            <div class="member" data-info="xyyy，北京林业大学信息学院信息专业大三学生">
+                <img src="image\yy.jpg" alt="成员1" class="member-image">
+            </div>
+            <div class="member" data-info="wf，北京林业大学信息学院计算机科学与技术专业大三学生">
+                <img src="image\wf.jpg" alt="成员2" class="member-image">
+            </div>
+            <div class="member" data-info="csy，北京林业大学信息学院算机科学与技术专业大三学生">
+                <img src="image\sy.jpg" alt="成员3" class="member-image">
+            </div>
+        </div>
+        <div id="member-info" class="member-info">点击成员图片查看简介</div>
+
+        <div class="contact-info">
+            <h2 >联系我们</h2>
+            <p>工作时间: 8:00-22:00</p>
+            <p>邮箱: xxxxx.com</p>
+            <p>电话: ххххxxxx</p>
+        </div>
+    </div>
+
+    <script src="about.js"></script> <!-- 特定交互功能的JavaScript -->
+</body>
+</html>
