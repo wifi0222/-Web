@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慧读文献</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>慧读文献</h1>
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li><a href="#" class="nav-link active">首页</a></li>
+                    <li><a href="crnn.html" class="nav-link">文档识别</a></li>
+                    <li><a href="about.html" class="nav-link">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 轮播图片和蒙版部分 -->
+    <div class="slider-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" style="background-image: url('image/slide1.jpg');"></div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide" style="background-image: url('image/slide2.jpg');"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- 蒙版和文字部分 -->
+        <div class="overlay">
+            <div class="hero-content">
+                <h2>慧读文献——pdf等文件识别</h2>
+                <p>两种大模型支持，多场景应用，优质服务值得您信赖</p>
+                <a href="#" class="btn">了解更多</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 识别样例部分样式 -->
+    <div class="recognition-samples">
+        <div class="sample-title">识别样例</div>
+        
+        <div class="sample-section">
+            <div class="sample-item">
+                <div class="sample-icon"></div>
+                <div class="sample-text">表格识别效果</div>
+            </div>
+        </div>
+        
+        <div class="sample-image-container">
+            <img src="image/表格示例.png" alt="表格识别效果" class="sample-image">
+        </div>
+    
+        <div class="sample-section">
+            <div class="sample-item">
+                <div class="sample-icon"></div>
+                <div class="sample-text">公式识别效果</div>
+            </div>
+        </div>
+        
+        <div class="sample-image-container">
+            <img src="image/公式示例.png" alt="公式识别效果" class="sample-image">
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

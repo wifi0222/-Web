@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慧读文献 - CRNN</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 通用的导航栏和全局样式 -->
+    <link rel="stylesheet" href="crnn.css">   <!-- CRNN 页面特定样式 -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">慧读文献</a></h1>
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="#" class="nav-link active">文档识别</a></li>
+                    <li><a href="about.html" class="nav-link">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+      <!-- 主内容部分 -->
+    <div class="main-content">
+        <div class="upload-section">
+            <div class="upload-box-container">
+                <div class="upload-box">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <label for="fileInput" class="upload-label">
+                            <div class="upload-icon" id="thumbnail-container">+</div>
+                            <div class="upload-text" id="upload-text">上传文件</div>
+                            <div class="upload-hint">支持的格式, eg: xxxxxxxxxx</div>
+                        </label>
+                        <input type="file" id="fileInput" name="file" accept=".pdf,.jpg,.png,.docx" style="display: none;">
+                    </form>
+                </div>
+                <button id="deleteButton" class="delete-button">✖ 删除文件</button> <!-- 删除按钮 -->
+            </div>
+            <div class="arrow">➔</div>
+            <div class="result-box-container">
+                <div class="result-box">
+                    <div id="resultText">识别结果将在这里显示</div>
+                </div>
+                <button id="startRecognitionButton" class="process-button">开始识别</button> <!-- 开始识别按钮 -->
+            </div>
+        </div>
+        <div class="hint-text">如果需要哪种格式更推荐xxxxxxxx</div>
+    </div>
+
+    <script src="crnn.js"></script> <!-- JS逻辑 -->
+</body>
+</html>

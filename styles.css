@@ -1,0 +1,196 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    z-index: 1000;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #007bff;
+}
+/* 链接样式重置，确保所有状态下链接样式一致 */
+a {
+    color: #007bff; /* 链接颜色与其他元素一致 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+
+/* 轮播图和蒙版容器 */
+.slider-container {
+    width: 100%;
+    height: 40vh; /* 设置高度为页面的2/5 */
+    position: relative;
+    overflow: hidden; /* 隐藏超出部分 */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%; /* 高度设置为与父容器一致 */
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* 确保图片覆盖整个轮播容器 */
+}
+
+/* 蒙版和文字部分 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* 蒙版宽度占轮播图片的左侧50% */
+    height: 100%; /* 蒙版高度与轮播图高度一致 */
+    background-color: rgba(0, 123, 255, 0.4); /* 蓝色蒙版 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1; /* 置于轮播图前 */
+    pointer-events: none; /* 蒙版不遮挡导航栏或其他可交互元素 */
+}
+
+.hero-content {
+    max-width: 80%;
+    margin: auto;
+    pointer-events: auto; /* 允许文字和按钮交互 */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* 识别样例部分样式 */
+.recognition-samples {
+    width: 100%; /* 确保宽度与浏览器一致 */
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 10%; /* 两侧留出空间 */
+}
+
+.sample-title {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold; /* 加粗字体 */
+    padding: 15px 40px; /* 两侧留出空间，使背景比文字宽 */
+    margin-bottom: 30px;
+    display: inline-block;
+    border-radius: 15px; /* 圆角效果 */
+}
+
+.sample-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: flex-start; /* 左对齐 */
+    text-align: left; /* 左对齐 */
+}
+
+.sample-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.sample-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    margin-right: 10px;
+}
+
+.sample-text {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.sample-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%; /* 确保图片宽度与浏览器一致 */
+}
+
+.sample-image {
+    width: 100%; /* 图片宽度为浏览器宽度 */
+    max-width: 100%; /* 确保图片不会超出浏览器宽度 */
+    height: auto;
+    border-radius: 10px; /* 圆角效果 */
+    margin-top: 10px;
+}
+
+
+/* Swiper pagination */
+.swiper-pagination {
+    bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #007bff;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}

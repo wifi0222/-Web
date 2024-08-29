@@ -1,0 +1,115 @@
+/* CRNN 页面特定样式 */
+
+.main-content {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.upload-box-container, .result-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* 与框的宽度一致 */
+}
+
+.upload-box, .result-box {
+    width: 100%; /* 使用容器宽度 */
+    height: 300px; /* 增加框的高度 */
+    border: 2px solid #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    overflow: hidden; /* 防止缩略图超出框 */
+}
+
+.upload-box:hover, .result-box:hover {
+    border-color: #0056b3;
+}
+
+.upload-icon {
+    font-size: 4rem;  /* 增大图标 */
+    color: #007bff;
+}
+
+.upload-text {
+    font-size: 2rem;  /* 增大文本 */
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.upload-hint {
+    font-size: 1rem;  /* 增大提示文本 */
+    color: #aaa;
+    margin-top: 5px;
+}
+
+#thumbnail-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* 确保图片适应容器 */
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #007bff;
+    align-self: center;
+    margin: 0 20px;
+}
+
+.process-button, .delete-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    display: none; /* 默认隐藏，文件上传后显示 */
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.process-button {
+    background-color: #007bff;
+}
+
+.process-button:hover {
+    background-color: #0056b3;
+}
+
+.hint-text {
+    font-size: 1rem;  /* 增大底部提示文本 */
+    color: #aaa;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resultText {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
