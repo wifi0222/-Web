@@ -57,6 +57,19 @@ a {
     text-decoration: none; /* 移除下划线 */
 }
 
+/* Logo样式 */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; /* 设置Logo的宽度，根据需要调整 */
+    height: auto;
+    margin-right: 10px; /* 给Logo和文字之间增加一点间距 */
+}
+
+
 
 /* 轮播图和蒙版容器 */
 .slider-container {

@@ -17,3 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+// 初始化Swiper
+var swiper = new Swiper('.swiper-container', {
+    loop: true, // 启用循环播放
+    autoplay: {
+        delay: 3000, // 设置自动播放的间隔时间，单位为毫秒
+        disableOnInteraction: false, // 用户交互后是否继续自动播放
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // 允许点击分页器
+    },
+});
+

@@ -25,7 +25,7 @@
     </header>
 
       <!-- 主内容部分 -->
-    <div class="main-content">
+      <div class="main-content">
         <div class="upload-section">
             <div class="upload-box-container">
                 <div class="upload-box">
@@ -33,9 +33,9 @@
                         <label for="fileInput" class="upload-label">
                             <div class="upload-icon" id="thumbnail-container">+</div>
                             <div class="upload-text" id="upload-text">上传文件</div>
-                            <div class="upload-hint">支持的格式, eg: xxxxxxxxxx</div>
+                            <div class="upload-hint">支持的格式: .jpg, .jpeg, .png, .bmp</div>
                         </label>
-                        <input type="file" id="fileInput" name="file" accept=".pdf,.jpg,.png,.docx" style="display: none;">
+                        <input type="file" id="fileInput" name="file" accept=".jpg,.jpeg,.png,.bmp" style="display: none;">
                     </form>
                 </div>
                 <button id="deleteButton" class="delete-button">✖ 删除文件</button> <!-- 删除按钮 -->
@@ -48,7 +48,7 @@
                 <button id="startRecognitionButton" class="process-button">开始识别</button> <!-- 开始识别按钮 -->
             </div>
         </div>
-        <div class="hint-text">如果需要哪种格式更推荐xxxxxxxx</div>
+        <div class="hint-text">注意文件上传格式！</div>
     </div>
 
     <script src="crnn.js"></script> <!-- JS逻辑 -->
